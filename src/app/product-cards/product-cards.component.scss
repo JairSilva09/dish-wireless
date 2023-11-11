@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    color: #333;
+}
+
+.banner h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+}
+
+.producto {
+    box-sizing: border-box;
+    width: calc(25% - 20px); /* 25% - 20px de espacio entre las columnas */
+    margin-bottom: 20px;
+    padding: 14px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.price-detail{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-details{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}

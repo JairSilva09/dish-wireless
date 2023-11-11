@@ -1,0 +1,39 @@
+
+/* Productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+}
+
+.producto {
+    box-sizing: border-box;
+    width: calc(25% - 20px); /* 25% - 20px de espacio entre las columnas */
+    margin-bottom: 20px;
+    padding: 14px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    text-align: center;
+}
+
+
+.price-detail{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-details{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
