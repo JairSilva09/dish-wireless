@@ -1,16 +1,103 @@
-<div id="product-container">
+<app-header></app-header>
+<div class="product-container">
   <!-- Menú en la parte superior -->
-  <div id="top-menu">
-    <!-- Elementos del menú aquí -->
+  <div class="top-menu">
+
+
+      <ul class="row-menu">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/products">products</a></li>
+          <li><a href="/carrito">Carrito</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+      </ul>
+
   </div>
 
-  <!-- Contenedor de la imagen grande seleccionada -->
-  <div id="main-image-container">
-    <img [src]="selectedImage" alt="Selected Product Image">
+  <!-- Contedor principal de la informacion  -->
+  <div class="main-info-container">
+
+<!-- CONTENEDOR-IZQUIERDO -->
+    <div class="img-container">
+      <div class="img-magnificacion">
+        <img src="assets/images/apple.jpeg" style="width: 100%;" >
+      </div>
+      <div class="img-minimized">
+        <img src="assets/images/img-details/app1.jpeg" class="min-img" >
+        <img src="assets/images/img-details/app5.jpeg" class="min-img" >
+        <img src="assets/images/img-details/app2.jpeg" class="min-img" >
+        <img src="assets/images/img-details/app4.jpeg" class="min-img" >
+        <img src="assets/images/img-details/app3.jpeg" class="min-img" >
+        <img src="assets/images/img-details/app1.jpeg" class="min-img" >
+        <img src="assets/images/img-details/app3.jpeg" class="min-img" >
+        <img src="assets/images/img-details/app4.jpeg" class="min-img" >
+
+
+
+      </div>
+
+    </div>
+
+<!-- CONTENEDOR-DERECHO -->
+    <div class="info-column">
+      <div class="offer-container">
+        <div class="product-name">iPhone 15</div>
+        <div class="sub-info">Apple</div>
+        <div class="price-info">From $0.00/mo. or $829.99</div>
+        <div class="shipping-info">Est. Ship 11 Oct 2023</div>
+<p><strong>Retail:</strong> $829.99</p>
+<p>
+  0% APR for qualified buyers. If ypu cancel wireless service,
+  remaining balance on the phone becomes due</p>
+  <p><strong>Plan </strong>Infinite Access for Iphone Change Plan</p>
+        <div class="plan-info">
+          <div class="top-plan">
+          <div class="plan-title">Infinite Access for iPhone</div>
+          <div class="mony"> $60.00/mo.</div>
+        </div>
+          <div class="plan-features">
+            No trade-in required every year<br>
+            Latest iPhone every year<br>
+            Unlimited wireless on<br>
+            America's Smart Network<br>
+            Unlimited talk, text and data<br>
+            Mexico & Canada to text, talk & data<br>
+            200 global destinations
+          </div>
+        </div>
+
+        <div class="finish-line">
+          Finish. Pick your favorite.
+        </div>
+
+        <div class="section">
+          <div class="section-title">Color - Black</div>
+          <div class="color-options">
+            <div class="color-square"><div class="color-circle color-black"></div></div>
+            <div class="color-square"><div class="color-circle color-grey"></div></div>
+            <div class="color-square"><div class="color-circle color-pink"></div></div>
+            <div class="color-square"><div class="color-circle color-green"></div></div>
+            <div class="color-square"><div class="color-circle color-yellow"></div></div>
+          </div>
+        </div>
+
+<div class="section storage-options">
+  <div class="section-title">Storage. How much space do you need?</div>
+  <button>128 GB <span class="included">Included</span></button>
+  <button>256 GB <span class="included">Included</span></button>
+  <button>512 GB <span class="additional-cost">+ $3.61/mo.</span></button>
+</div>
+
+<div class="section protection-options">
+  <div class="section-title">Phone Protection</div>
+  <button>Add Boost Protect with AppleCare Services for $12.00/mo</button>
+  <button>I don't want protection</button>
+</div>
+
+      </div>
+
+
+    </div>
   </div>
 
-  <!-- Carrusel de imágenes en la parte inferior -->
-  <div id="carousel-container">
-    <img *ngFor="let image of imageList" [src]="image" (click)="selectImage(image)" alt="Product Image">
-  </div>
+
 </div>

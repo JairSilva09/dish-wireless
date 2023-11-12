@@ -1,4 +1,5 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Product {
   id: number;
@@ -15,6 +16,9 @@ interface Product {
   styleUrls: ['./product-cards.component.scss']
 })
 export class ProductCardsComponent {
+
+  constructor(private router: Router) { }
+
   @Input() effect: any = {
       effect: false,
       ind: 0
@@ -36,5 +40,9 @@ export class ProductCardsComponent {
 
   toggleDetails(index: number): void {
     this.activeCardIndex = this.activeCardIndex === index ? null : index;
+  }
+
+  goDetails(): void {
+    this.router.navigate(['productDetails']);
   }
 }
