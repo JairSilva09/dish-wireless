@@ -26,23 +26,40 @@
 //     text-decoration: underline;
 // }
 
+.header {
+  background-color: #333;
+  overflow: hidden;
+}
+
 nav {
-    background-color: #333;
-    display: flex;
-    // justify-content: space-around;
-    padding: 10px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 19%;
 }
 
 nav button {
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  transition: background-color 0.3s ease; height: 3.5rem;
 }
 
 nav button:hover {
-    background-color: #555;
+  // background-color: #555;
 }
+
+@media (max-width: 1000px) {
+  nav {
+    gap: 7%;
+  }
+  nav button {
+    padding: 0;
+
+  }
+
+}
+

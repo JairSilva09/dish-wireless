@@ -1,0 +1,23 @@
+#product-container {
+  /* Estilos para el contenedor principal */
+}
+
+#top-menu {
+  /* Estilos para el menú superior */
+}
+
+#main-image-container {
+  /* Estilos para el contenedor de la imagen grande */
+}
+
+#carousel-container img {
+  /* Estilos para las imágenes del carrusel */
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.2s ease;
+}
+
+#carousel-container img:hover {
+  /* Efecto al pasar el ratón por encima */
+  transform: scale(1.05);
+}

@@ -1,0 +1,16 @@
+<div id="product-container">
+  <!-- Menú en la parte superior -->
+  <div id="top-menu">
+    <!-- Elementos del menú aquí -->
+  </div>
+
+  <!-- Contenedor de la imagen grande seleccionada -->
+  <div id="main-image-container">
+    <img [src]="selectedImage" alt="Selected Product Image">
+  </div>
+
+  <!-- Carrusel de imágenes en la parte inferior -->
+  <div id="carousel-container">
+    <img *ngFor="let image of imageList" [src]="image" (click)="selectImage(image)" alt="Product Image">
+  </div>
+</div>
