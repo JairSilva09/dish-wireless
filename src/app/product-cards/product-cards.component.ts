@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 
 interface Product {
   id: number;
@@ -15,6 +15,11 @@ interface Product {
   styleUrls: ['./product-cards.component.scss']
 })
 export class ProductCardsComponent {
+  @Input() effect: any = {
+      effect: false,
+      ind: 0
+  };
+
   activeCardIndex: number | null = null;
 
   products: Product[] = [

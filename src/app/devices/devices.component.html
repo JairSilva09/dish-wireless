@@ -5,13 +5,38 @@
         <h1>Bienvenido a Tu Tienda en Línea</h1>
         <p>Descubre nuestras ofertas exclusivas</p>
     </section>
-   <app-product-cards></app-product-cards>
-   <app-product-cards></app-product-cards>
-   <app-product-cards></app-product-cards>
-   <app-product-cards></app-product-cards>
-   <app-product-cards></app-product-cards>
-   <app-product-cards></app-product-cards>
-   <app-product-cards></app-product-cards>
+    <section class="products">
+        <div class="cont-product shadow" (mouseenter)="put_hover_effect(1)" (mouseleave)="remove_hover_effect(1)">
+            <app-product-cards [effect]="effect"></app-product-cards>
+        </div> 
+        <div class="cont-product shadow" (mouseenter)="put_hover_effect(2)" (mouseleave)="remove_hover_effect(2)">
+            <app-product-cards [effect]="effect"></app-product-cards>
+        </div> 
+        <div class="cont-product shadow" (mouseenter)="put_hover_effect(9)" (mouseleave)="remove_hover_effect(3)">
+            <app-product-cards [effect]="effect"></app-product-cards>
+        </div> 
+        <div class="cont-product shadow" (mouseenter)="put_hover_effect(4)" (mouseleave)="remove_hover_effect(4)">
+            <app-product-cards [effect]="effect"></app-product-cards>
+        </div> 
+        <div class="cont-product shadow" (mouseenter)="put_hover_effect(5)" (mouseleave)="remove_hover_effect(5)">
+            <app-product-cards [effect]="effect"></app-product-cards>
+        </div> 
+        <div class="cont-product shadow" (mouseenter)="put_hover_effect(6)" (mouseleave)="remove_hover_effect(6)">
+            <app-product-cards [effect]="effect"></app-product-cards>
+        </div> 
+        <div class="cont-product shadow" (mouseenter)="put_hover_effect(7)" (mouseleave)="remove_hover_effect(7)">
+            <app-product-cards [effect]="effect"></app-product-cards>
+        </div> 
+        <div class="cont-product shadow" (mouseenter)="put_hover_effect(8)" (mouseleave)="remove_hover_effect(8)">
+            <app-product-cards [effect]="effect"></app-product-cards>
+        </div> 
+        <div class="cont-product shadow" (mouseenter)="put_hover_effect(9)" (mouseleave)="remove_hover_effect(9)">
+            <app-product-cards [effect]="effect"></app-product-cards>
+        </div> 
+        <div class="cont-product shadow" (mouseenter)="put_hover_effect(10)" (mouseleave)="remove_hover_effect(10)">
+            <app-product-cards [effect]="effect"></app-product-cards>
+        </div>          
+    </section>   
 </main>
 <app-footer></app-footer>
 
