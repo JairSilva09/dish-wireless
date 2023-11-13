@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,13 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HeaderComponent,
     FooterComponent,
     PaymentComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

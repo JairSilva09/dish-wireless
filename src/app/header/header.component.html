@@ -1,8 +1,24 @@
 <header>
+    <div class="container-lines">
+        <div class="lines" (click)="panelOpenState = !panelOpenState">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+    
     <nav>
-        <button  class="nav-button" routerLinkActive="button-active" [routerLink]="'/address'">Device</button>
+        <button  class="nav-button" routerLinkActive="button-active" [routerLink]="'/devices'">Device</button>
+        <button class="nav-button" >Payment Information</button>
+        <button  class="nav-button">Compliance and disclousures</button>
+        <button class="nav-button">Total line Selection</button>
+    </nav>
+    <nav *ngIf="panelOpenState" class="responsive">
+        <button  class="nav-button" routerLinkActive="button-active" [routerLink]="'/devices'">Device</button>
         <button class="nav-button" >Payment Information</button>
         <button  class="nav-button">Compliance and disclousures</button>
         <button class="nav-button">Total line Selection</button>
     </nav>
 </header>
+
+  
