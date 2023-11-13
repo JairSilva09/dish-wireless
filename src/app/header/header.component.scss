@@ -15,6 +15,7 @@ nav {
 }
 
 .responsive {
+  display: none;
   background-color: #333;
   // justify-content: center;
   // gap: 19%;
@@ -97,7 +98,7 @@ span.line{
   nav {
     display: flex;
     justify-content: center;
-    gap: 19%;
+    gap: 10%;
     flex-direction: row;
   }
   nav button {
